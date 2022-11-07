@@ -5,12 +5,12 @@
 class Pctl < Formula
   desc "Command Line Interface tool for Paralus"
   homepage "https://github.com/paralus/cli"
-  version "0.0.1"
+  version "0.0.3"
   license "Apache License 2.0"
 
   on_macos do
-    url "https://github.com/rustiever/cli/releases/download/v0.0.1/pctl_0.0.1_darwin_all.tar.gz"
-    sha256 "a00a822a45bbc0d8a0d1a40549658ec5839f1f8caa5151c09ad89a96ac27c169"
+    url "https://github.com/rustiever/cli/releases/download/v0.0.3/pctl_0.0.3_darwin_all.tar.gz"
+    sha256 "c37f5d50b67f5a7c8195e00e14033b7d300e6d65eeee8b11791aedc18fc8ac4d"
 
     def install
       bin.install "pctl"
@@ -19,16 +19,16 @@ class Pctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rustiever/cli/releases/download/v0.0.1/pctl_0.0.1_linux_amd64.tar.gz"
-      sha256 "2f8a33c51cfc1f1043af6ca57ae4e3b76155284838d3a3ac44424bb59895b88e"
+      url "https://github.com/rustiever/cli/releases/download/v0.0.3/pctl_0.0.3_linux_amd64.tar.gz"
+      sha256 "9a241861b9bde076baccf613b8e98268826e9a1ef45ef5fc4c42db899568107f"
 
       def install
         bin.install "pctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rustiever/cli/releases/download/v0.0.1/pctl_0.0.1_linux_arm64.tar.gz"
-      sha256 "3dee2464d35cfac7f3c765babf65b36a2e7ee080f9d6f0d9e9a924f52ac7c046"
+      url "https://github.com/rustiever/cli/releases/download/v0.0.3/pctl_0.0.3_linux_arm64.tar.gz"
+      sha256 "5fded7b14e9f12c825a16e0de1b76e8e0dd5e904f5e94763e53523b5c02e5630"
 
       def install
         bin.install "pctl"
