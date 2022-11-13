@@ -10,7 +10,7 @@ class Pctl < Formula
 
   on_macos do
     url "https://github.com/rustiever/cli/releases/download/v0.0.1/pctl_0.0.1_darwin_all.tar.gz"
-    sha256 "5494e011446a7ea61432cd0879dd3a67d0757528bfb9b48e687818e840b15f1e"
+    sha256 "a693ddc686140d4f727aab2874c033370c0da8796febab670cf3ff606200af7b"
 
     def install
       bin.install "pctl"
@@ -20,7 +20,7 @@ class Pctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/rustiever/cli/releases/download/v0.0.1/pctl_0.0.1_linux_amd64.tar.gz"
-      sha256 "ccafe3ac8c469491e73ec7ed684c78ba53491a707d02b2af524aac1731a2a8a6"
+      sha256 "2a0ef4dcd78ae496df53e265f26a7c806942c7c2b68c881b951ba3edeff82747"
 
       def install
         bin.install "pctl"
@@ -28,7 +28,7 @@ class Pctl < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rustiever/cli/releases/download/v0.0.1/pctl_0.0.1_linux_arm64.tar.gz"
-      sha256 "e21c6537bcb5f5e02c5ad7c751ccb06b162998f0cc6293abce20dcbd2f8fa9ef"
+      sha256 "bb8a704679197e884befe0264d1c8f29b5afb01f3221a3c0d9a92946eb67589c"
 
       def install
         bin.install "pctl"
